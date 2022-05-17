@@ -1,0 +1,98 @@
+Exercise 2:
+
+//Sasindu – IT21279966
+// UnregisteredCustomer.h
+class UnregisteredCustomer
+{
+  private :
+    char ucName[20];
+    char ucEmail[30];
+    char ucMobNo[10];
+    char setNewUName[10];
+    char setNewPwd[10];
+    float rFee;
+
+  public :
+    UnregisteredCustomer();
+    void registerCustomer(char name[20], char email[30], char mobNo[10], char setUName[10] ,char setPwd[10]);
+    void regFee(float fee);
+    ~UnregisteredCustomer();  
+};
+
+
+
+// UnregisteredCustomer.cpp
+#include <iostream>
+#include <cstring>
+#include “UnregisteredCustomer.h”
+UnregisteredCustomer::UnregisteredCustomer()
+{
+    strcpy(ucName, "");
+    strcpy(ucEmail, "");
+    strcpy(ucMobNo, "");
+    strcpy(setNewUName, "");
+    strcpy(setNewPwd, "");
+    rFee = 0;
+}
+void UnregisteredCustomer::registerCustomer(char name[20], char email[30], char mobNo[10], char setUName[10] ,char setPwd[10])
+{
+    strcpy(ucName, name);
+    strcpy(ucEmail, email);
+    strcpy(ucMobNo, mobNo);
+    strcpy(setNewUName, setUName);
+    strcpy(setNewPwd, setPwd);
+}
+void regFee(float fee)
+{
+}
+
+UnregisteredCustomer::~UnregisteredCustomer()
+{
+}
+//Job.h
+class Job
+{
+  private:
+    char jobName[20];
+    char jobID[10];
+    char jobType[10];
+
+  public:
+    Job();
+    void storeJobDetails(char jName[20], char jID[10], char jType[10]);
+    void editJobDetails(char jName[20], char jID[10], char jType[10]);
+    void displayJobDetails();
+    ~Job();
+};
+
+
+//Job.cpp
+#include<iostream>
+#include<cstring>
+#include “Job.h”
+
+Job::Job()
+{
+  strcpy(jobName, "");
+  strcpy(jobID, "");
+  strcpy(jobType, "");
+}
+
+void Job::storeJobDetails(char jName[20], char jID[10], char jType[10])
+{
+}
+
+void Job::editJobDetails(char jName[20], char jID[10], char jType[10])
+{
+}
+
+void Job::displayJobDetails()
+{
+}
+
+Job::~Job()
+{
+}
+
+
+
