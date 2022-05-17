@@ -1,0 +1,102 @@
+//Thejani – IT21282836
+
+// Jobseeker.h
+#include “RegisteredCustomer.h”
+
+class Jobseeker : public RegisteredCustomer{
+	private:
+		char js_ReqFormNo[10];
+		char cvNo[10];
+		
+	public:
+		Jobseeker();
+		void js_ReqForm();
+                             void searchJob();
+                             void uploadCV();
+                             ~Jobseeker();
+};
+
+
+
+// Jobseeker.cpp
+#include <iostream>
+#include <cstring>
+#inlcude “Jobseeker.h”
+
+Jobseeker::Jobseeker() {
+  strcpy(js_ReqFormNo,"");
+  strcpy(cvNo, "");
+}
+
+void Jobseeker::js_ReqForm() {
+
+}
+
+void Jobseeker::searchJob() {
+
+}
+
+void Jobseeker::uploadCV() {
+
+}
+
+Jobseeker::~Jobseeker() {
+
+}
+
+
+
+// PaymentSystem.h
+class PaymentSystem {
+	private:
+		double discount;
+		double payment;
+		double finalPayment;
+		int cardNo;
+		int pinNo;
+		char invoiceNo[];
+		
+	public:
+		PaymentSystem();
+		PaymentSystem(int cNo, int pNo);
+		void selectPayMethod();
+		double calcDiscount();
+		double calcFinalPayment();
+		void validatePayDetails();
+		void displayPayDetails();
+		void storePayDetails();
+};
+
+
+
+// PaymentSystem.cpp
+#include <iostream>
+#include <cstring>
+#inlcude “PaymentSystem.h”
+
+PaymentSystem::PaymentSystem() {
+  discount = 0;
+  payment = 0;
+  finalPayment = 0;
+  cardNo = 0;
+  pinNo = 0;
+  strcpy(invoiceNo, "");
+}
+PaymentSystem::PaymentSystem(int cNo, int pNo) {
+  cardNo = cNo;
+  pinNo = pNo;
+}
+void PaymentSystem::selectPayMethod() {
+}
+double PaymentSystem::calcDiscount() {
+  return 0;
+}
+double PaymentSystem::calcFinalPayment() {
+  return 0;
+}
+void PaymentSystem::validatePayDetails() {
+}
+void PaymentSystem::displayPayDetails() {
+}
+void PaymentSystem::storePayDetails() {
+}
