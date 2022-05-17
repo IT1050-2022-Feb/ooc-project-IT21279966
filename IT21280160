@@ -1,0 +1,99 @@
+//Tharindu – IT21280160
+
+//RegisteredCustomer.h
+class RegisteredCustomer
+{
+    protected:
+	    char userName[20];
+	    char password[20];
+	    char customerId[10];
+	    char name[20];
+	    char email[25];
+                   char contactNo[20];
+                   char regFormNo[20];
+
+    public:
+	    void login();
+	    void loginDetails(char uName[], char pwd[]);
+	    void regCustomerDetails(char custID[] ,char custName[], char custEmail[], char custContact[]);
+	    void selectOptions();
+	    void selectPayMethod();
+	    void displayCustDetails();
+};
+
+
+//RegisteredCustomer.cpp
+#include<iostream>
+#include<cstring>
+#include “RegisteredCustomer.h”
+
+void RegisteredCustomer::login(){
+      
+}
+
+void RegisteredCustomer::loginDetails(char uName[], char pwd[]){
+  
+}
+
+void RegisteredCustomer::regCustomerDetails(char custID[] ,char custName[], char custEmail[], char custContact[]){
+  
+}
+
+void RegisteredCustomer::selectOptions(){
+  
+}
+
+void RegisteredCustomer::selectPayMethod(){
+  
+}
+
+void RegisteredCustomer::displayCustDetails(){
+  
+}
+
+
+//Talent.h
+class Talent
+{
+    private:
+	    char talentName[20];
+	    char talentType[20];
+	    char talentId[10];
+
+    public:
+	    Talent();
+	    void storeTalentDetails(char tName[],char tType[],char tId[]);
+	    void editTalentDetails(char tName[], char tType[], char tId[]);
+	    void displayTalentDetails();
+	    ~Talent();
+
+};
+
+
+//Talent.cpp
+#include<iostream>
+#include<cstring>
+#include “Talent.h”
+
+Talent::Talent(){
+  strcpy(talentName, "");
+  strcpy(talentType, "");
+  strcpy(talentId, "");
+}
+
+void Talent::storeTalentDetails(char tName[],char tType[],char tId[]){
+  
+}
+
+void Talent::editTalentDetails(char tName[], char tType[], char tId[]){
+  
+}
+
+void Talent::displayTalentDetails(){
+  
+}
+
+Talent::~Talent(){
+  
+}
+
