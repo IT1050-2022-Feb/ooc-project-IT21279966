@@ -1,0 +1,92 @@
+//Thisun – IT21282904
+
+//Recruiter.h
+#include “RegisteredCustomer.h”
+
+class Recruiter : public RegisteredCustomer
+{
+private:
+	char r_ReqFormNo[10];
+
+public:
+	Recruiter();
+	void r_ReqForm();
+	void searchTalent();
+	~Recruiter();
+};
+
+//Recruiter.cpp
+#include<iostream>
+#include<cstring>
+#include “Recruiter.h”
+
+Recruiter::Recruiter()
+{
+	strcpy(r_ReqFormNo, "");
+}
+
+void Recruiter::r_ReqForm()
+{
+  
+}
+
+void Recruiter::searchTalent()
+{
+  
+}
+
+Recruiter::~Recruiter()
+{
+  
+}
+
+//Assistant.h
+class Assistant
+{
+ private:
+	 char a_userName[20];
+	 char a_password[20];
+	 int a_ID;
+	 char a_name[20];
+	 char a_email[50];
+
+ public:
+	 Assistant();
+	 void empLogin();
+	 void empLoginDetails(char aUName[],char aPwd[]);
+	 void setAssistantDetails(int asID, char asName[],char asEmail[]);
+	void checkCV();
+	void catagorizeJs();
+	~Assistant();
+};
+
+//Assistant.cpp
+#include<iostream>
+#include<cstring>
+#include “Assistant.h”
+
+Assistant::Assistant(){
+	strcpy(a_userName, "");
+	strcpy(a_password, "");
+	a_ID = 0;
+	strcpy(a_name, "");
+	strcpy(a_email, "");
+}
+
+void Assistant::empLogin(){
+}
+
+void Assistant::empLoginDetails(char aUName[], char aPwd[]){
+}
+
+void Assistant::setAssistantDetails(int asID, char asName[], char asEmail[]){
+}
+
+void Assistant::checkCV(){
+}
+
+void Assistant::catagorizeJs() {
+}
+
+Assistant::~Assistant(){
+}
